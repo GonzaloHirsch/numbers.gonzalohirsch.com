@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Prediction by Gonzalo Hirsch</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png">
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <!-- SEO - JSON+LD -->
+    <script
+        type="application/ld+json">{"@context":"http://schema.org","@type":"WebSite","name":"Number Prediction by Gonzalo Hirsch","url":"https://numbers.gonzalohirsch.com/"}</script>
+    <script
+        type="application/ld+json">{"@context":"http://www.schema.org","@type":"Person","@id":"https://gonzalohirsch.com/#about","name":"Gonzalo Hirsch","alternateName":"Gonzalo Hirsch","nationality":"Argentinian","alumniOf":[{"@type":"CollegeOrUniversity","name":"Instituto Tecnológico de Buenos Aires","sameAs":"http://itba.edu.ar/"}],"gender":"Male","jobTitle":"Software Engineer","worksFor":[{"@type":"Organization","name":"Toptal","sameAs":["https://www.toptal.com/","https://www.linkedin.com/company/toptal","https://twitter.com/toptal","https://www.facebook.com/toptal","https://www.instagram.com/toptal/"]}],"url":"https://gonzalohirsch.com/","image":"https://gonzalohirsch.com/meta-img.jpg","sameAs":["https://gonzalohirsch.com/","https://github.com/GonzaloHirsch","https://www.linkedin.com/in/gonzalo-hirsch/","https://www.instagram.com/gonzalohirsch/?hl=en","https://www.toptal.com/resume/gonzalo-hirsch"]}</script>
+    <!-- SEO -->
+    <meta hid="description" name="description"
+        content="This specially-built, serverless CNN hosted in AWS predicts the number you are writing. It can analyze single digits from 0 to 9 and shows the confidence score.">
+    <meta hid="keywords" name="keywords"
+        content="Development, Developer, Software, Engineer, Software Engineer, Engineering, Full-Stack, Freelancer, Experiences, CNN, Machine Learning, ML, AI, Artificial Intelligence, Numbers, Javascript">
+    <meta hid="author" name="author" content="Gonzalo Hirsch">
+    <meta hid="og:title" property="og:title" content="Number Prediction by Gonzalo Hirsch">
+    <meta hid="og:url" property="og:url" content="https://numbers.gonzalohirsch.com/">
+    <meta hid="og:description" property="og:description"
+        content="This specially-built, serverless CNN hosted in AWS predicts the number you are writing. It can analyze single digits from 0 to 9 and shows the confidence score.">
+    <meta hid="og:image" property="og:image" content="https://numbers.gonzalohirsch.com/meta-img.webp">
+    <meta hid="og:type" property="og:type" content="website">
+    <meta hid="og:image:type" property="og:image:type" content="image/jpeg">
+    <meta hid="og:image:width" property="og:image:width" content="1200">
+    <meta hid="og:image:height" property="og:image:height" content="630">
+    <meta hid="og:image:alt" property="og:image:alt" content="Gonzalo Hirsch">
+    <meta hid="twitter:card" name="twitter:card" content="Summary">
+    <meta hid="twitter:title" name="twitter:title" content="Number Prediction by Gonzalo Hirsch">
+    <meta hid="twitter:url" name="twitter:url" content="https://numbers.gonzalohirsch.com/">
+    <meta hid="twitter:description" name="twitter:description"
+        content="This specially-built, serverless CNN hosted in AWS predicts the number you are writing. It can analyze single digits from 0 to 9 and shows the confidence score.">
+    <meta hid="twitter:image" name="twitter:image" content="https://numbers.gonzalohirsch.com/meta-img.webp">
+    <meta hid="twitter:image:alt" name="twitter:image:alt" content="Gonzalo Hirsch">
+    <link hid="canonical" rel="canonical" href="https://numbers.gonzalohirsch.com/">
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Number Prediction by Gonzalo Hirsch",
+        "url": "https://numbers.gonzalohirsch.com/",
+        "description": "This specially-built, serverless CNN hosted in AWS predicts the number you are writing. It can analyze single digits from 0 to 9 and shows the confidence score.",
+        "publisher": {
+          "@context": "http://www.schema.org",
+          "@type": "Person",
+          "@id": "https://gonzalohirsch.com/#about",
+          "name": "Gonzalo Hirsch",
+          "alternateName": "Gonzalo Hirsch",
+          "nationality": "Argentinian",
+          "alumniOf": [{
+            "@type": "CollegeOrUniversity",
+            "name": "Instituto Tecnológico de Buenos Aires",
+            "sameAs": "http://itba.edu.ar/"
+          }],
+          "gender": "Male",
+          "jobTitle": "Software Engineer",
+          "worksFor": [{
+            "@type": "Organization",
+            "name": "Toptal",
+            "sameAs": ["https://www.toptal.com/", "https://www.linkedin.com/company/toptal", "https://twitter.com/toptal", "https://www.facebook.com/toptal", "https://www.instagram.com/toptal/"]
+          }],
+          "url": "https://gonzalohirsch.com/",
+          "image": "https://gonzalohirsch.com/meta-img.jpg",
+          "sameAs": ["https://gonzalohirsch.com/", "https://github.com/GonzaloHirsch", "https://www.linkedin.com/in/gonzalo-hirsch/", "https://www.instagram.com/gonzalohirsch/?hl=en", "https://www.toptal.com/resume/gonzalo-hirsch"]
+        },
+        "license": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/deed.en_US"
+      }
+    </script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5HX58RHHVZ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-5HX58RHHVZ');
+    </script>
+</head>
+
+<body onload="init()">
+    <!-- Custom canvas to display everything -->
+    <header>
+        <h1>Number Prediction <span class="credits">by <a href="https://gonzalohirsch.com" target="_blank"
+                    rel="noopener">Gonzalo Hirsch</a></span></h1>
+    </header>
+    <main class="main-element">
+        <!-- Instructions -->
+        <p style="margin-bottom:2rem;text-align:center;">Use your mouse to write a number on the canvas. If you are
+            unhappy with your drawing, click <em>"Clear"</em> to reset the canvas. Once satisfied with the number, click
+            <em>"Predict"</em> to get the ML model to predict the number you drew.
+        </p>
+        <!-- Main canvas element, used for drawing -->
+        <div class="canvas-wrapper">
+            <span
+                style="position:absolute;top:-20px;right:0px;left:0px;text-align:center;font-size:12px;">(canvas)</span>
+            <canvas id="can" width="308" height="308" style="border:2px solid;"></canvas>
+        </div>
+        <div class="content-wrapper">
+            <div class="buttons-wrapper">
+                <button id="clear-btn" class="button" onclick="clearDrawing()">Clear</button>
+                <button id="predict-btn" class="button" onclick="predictDrawing()">Predict</button>
+            </div>
+            <p id="info-text" class="info-text" style="display:none;">RESULT GOES HERE</p>
+            <h2>Serverless Number Prediction</h2>
+            <p>This site uses a specially-built, serverless CNN (Convolutional Neural Network) hosted in AWS to predict
+                the number you are writing. It can analyze single digits from 0 to 9 and shows the confidence score
+                (percentage).
+            </p>
+            <p>If you are interested in how I built this, read the <a href="https://gonzalohirsch.com/blog/serverless-cnn-with-tensorflow/" target="_blank">blog</a> to learn more about it.</p>
+            <p>All the code for this project can be found on these repositories: <a
+                    href="https://github.com/GonzaloHirsch/numbers.gonzalohirsch.com" target="_blank"
+                    rel="noopener noreferrer">Web</a> and <a
+                    href="https://github.com/GonzaloHirsch/ml-numbers-serverless-api" target="_blank"
+                    rel="noopener noreferrer">Back-End</a>.</p>
+            <div class="share-controls">
+                <h3>Share</h3>
+                <div class="share-buttons">
+                    <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button"
+                        data-text="Check out this ASCII video generator from Gonzalo Hirsch."
+                        data-url="https://numbers.gonzalohirsch.com" data-show-count="false">Tweet</a>
+                    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                    <iframe
+                        src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fnumbers.gonzalohirsch.com&layout=button&size=small&appId=400525667891154&width=67&height=20"
+                        width="67" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                        allowfullscreen="true"
+                        allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                    <script type="IN/Share" data-url="https://numbers.gonzalohirsch.com"></script>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <a href="https://gonzalohirsch.com" target="_blank" rel="noopener">Gonzalo Hirsch</a> - 2023
+    </footer>
+    <script src="assets/js/drawing.js"></script>
+    <script src="https://platform.linkedin.com/in.js" type="text/javascript">lang: en_US</script>
+</body>
+
+</html>

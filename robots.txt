@@ -1,0 +1,4 @@
+User-Agent: *
+Allow: /
+
+Sitemap: https://numbers.gonzalohirsch.com/sitemap.xml
